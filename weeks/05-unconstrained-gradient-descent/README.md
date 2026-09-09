@@ -14,8 +14,9 @@
 - Why ill-conditioning (`κ ≫ 1`) makes GD zig-zag.
 
 ## Reading
-- Nocedal & Wright — Ch. 3 (line search methods)
-- Boyd & Vandenberghe — Ch. 9.1-9.3
+
+- [Nocedal & Wright — Ch. 3 (line search methods)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=49)
+- [Boyd — Ch. 9.1-9.2 (unconstrained problems, descent methods)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=471) · [9.3 (gradient descent)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=480)
 - Boyd slides — Section 9 "Unconstrained minimization"
 
 ## Implement

@@ -15,10 +15,11 @@
 - Complexity note: simplex is exponential worst-case, fast in practice.
 
 ## Reading
-- Winston, *Operations Research* — Ch. 3 (LP intro), Ch. 4 (simplex)
-- Nocedal & Wright — Ch. 13 (LP: the simplex method)
+
+- [Winston — Ch. 3 (introduction to linear programming)](../../resources/books/winston-operations-research.pdf#page=65)
+- [Winston — Ch. 4 (the simplex algorithm)](../../resources/books/winston-operations-research.pdf#page=143)
+- [Nocedal & Wright — Ch. 13 (LP: the simplex method)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=374)
 - Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Çokyüzlüler", "Simpleks Yöntemi"
-- Taha, *Yöneylem Araştırması* — LP chapters
 
 ## Implement
 - [ ] Tableau simplex (`src/optlib/simplex.py`): pivoting, ratio test, Bland's rule.

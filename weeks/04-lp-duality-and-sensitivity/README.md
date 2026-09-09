@@ -15,10 +15,11 @@
 - Dual simplex; farkas lemma / certificates of infeasibility.
 
 ## Reading
-- Winston — Ch. 5 (sensitivity analysis: applied approach), Ch. 6 (sensitivity analysis and duality)
-- Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Eşterslik" (duality), "İkili Seçenek Teoremleri" (theorems of alternatives)
-- Boyd & Vandenberghe — Ch. 5.1-5.2 (LP duality as a special case)
-- Boyd slides — Section 5 "Duality" (`bv_cvxslides.pdf`, p. 2815+ of text)
+
+- [Winston — Ch. 5 (sensitivity analysis: an applied approach)](../../resources/books/winston-operations-research.pdf#page=243)
+- [Winston — Ch. 6 (sensitivity analysis and duality)](../../resources/books/winston-operations-research.pdf#page=278)
+- [Boyd — Ch. 5.1 (the Lagrange dual function)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=229) · [5.2 (the dual problem)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=237)
+- Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Eşterslik", "İkili Seçenek Teoremleri"
 
 ## Implement
 - [ ] Automatic primal → dual transformer for LPs in any form.

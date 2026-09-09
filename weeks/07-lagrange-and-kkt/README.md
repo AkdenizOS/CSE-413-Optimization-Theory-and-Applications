@@ -16,8 +16,9 @@
 - Sensitivity: `λ*` = shadow price of constraint `i` (same idea as Week 4).
 
 ## Reading
-- Boyd & Vandenberghe — Ch. 5 (all), especially 5.5 (optimality conditions) and Example 5.2 (water-filling)
-- Nocedal & Wright — Ch. 12 (theory of constrained optimization)
+
+- [Boyd — Ch. 5 (duality), especially 5.5 (optimality conditions)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=229)
+- [Nocedal & Wright — Ch. 12 (theory of constrained optimization)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=323)
 - Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Lagrange Eştersliği", "Optimallik Koşulları"; 122 solved exercises
 
 ## Implement

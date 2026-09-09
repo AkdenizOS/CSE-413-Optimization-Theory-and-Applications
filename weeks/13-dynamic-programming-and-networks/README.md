@@ -16,8 +16,10 @@
 - Min-cost flow; network simplex; total unimodularity ⇒ LP relaxation is integral.
 
 ## Reading
-- Winston — Ch. 8 (network models), Ch. 18-19 (deterministic dynamic programming)
-- Winston — Ch. 7 (transportation, assignment, transshipment)
+
+- [Winston — Ch. 8 (network models)](../../resources/books/winston-operations-research.pdf#page=429)
+- [Winston — Ch. 18 (deterministic dynamic programming)](../../resources/books/winston-operations-research.pdf#page=977)
+- [Winston — Ch. 7 (transportation, assignment, transshipment)](../../resources/books/winston-operations-research.pdf#page=376)
 - Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Ağ Problemleri", "Çizge Kuramı", "En Kısa Yol Problemi", "Atama Problemi"
 
 ## Implement

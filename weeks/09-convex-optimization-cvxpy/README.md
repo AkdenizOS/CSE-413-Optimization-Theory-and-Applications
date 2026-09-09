@@ -15,7 +15,11 @@
 - Applications: regularized regression (LASSO, ridge), SVM, portfolio optimization, robust LP, Chebyshev center, minimum-volume ellipsoid.
 
 ## Reading
-- Boyd & Vandenberghe — Ch. 4, Ch. 6 (approximation and fitting), Ch. 7 (statistical estimation), Ch. 8 (geometric problems)
+
+- [Boyd — Ch. 4 (problem classes: LP, QP, SOCP, SDP)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=141)
+- [Boyd — Ch. 6 (approximation and fitting)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=305)
+- [Boyd — Ch. 7 (statistical estimation)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=365)
+- [Boyd — Ch. 8 (geometric problems)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=411)
 - Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Disiplinli Dışbükey Programlama" (DCP in Turkish), "Matris Değişkenli Problemler"
 - CVXPY docs: https://www.cvxpy.org/
 - Additional exercises: https://github.com/cvxgrp/cvxbook_additional_exercises

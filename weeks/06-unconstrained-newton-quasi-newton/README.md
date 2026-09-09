@@ -16,8 +16,11 @@
 - Method selection: cheap Hessian → Newton; large `n` → L-BFGS; residual structure → Gauss-Newton.
 
 ## Reading
-- Nocedal & Wright — Ch. 6 (quasi-Newton), Ch. 7 (large-scale/L-BFGS), Ch. 10 (least squares)
-- Boyd & Vandenberghe — Ch. 9.5
+
+- [Nocedal & Wright — Ch. 6 (quasi-Newton methods)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=154)
+- [Nocedal & Wright — Ch. 7 (large-scale unconstrained optimization, L-BFGS)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
+- [Nocedal & Wright — Ch. 10 (least-squares problems)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=264)
+- [Boyd — Ch. 9.5 (Newton's method)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=498)
 
 ## Implement
 - [ ] Newton with backtracking; report the two convergence phases.

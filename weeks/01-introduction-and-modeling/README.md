@@ -14,9 +14,10 @@
 - Taxonomy: LP, QP, SOCP, SDP, convex, IP/MIP, DP, heuristic-only.
 
 ## Reading
-- Boyd & Vandenberghe, *Convex Optimization* — Ch. 1 (`resources/books/boyd-vandenberghe-convex-optimization.pdf`)
-- Boyd slides — Section 1 "Introduction" (`resources/slides/bv_cvxslides.pdf`, p. 6+)
-- Winston, *Operations Research* — Ch. 1-2 (modeling, intro to LP)
+
+- [Boyd & Vandenberghe — Ch. 1 (introduction)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=15)
+- Boyd slides — Section 1 "Introduction" (`resources/slides/bv_cvxslides.pdf`)
+- [Winston — Ch. 1 (an introduction to model building)](../../resources/books/winston-operations-research.pdf#page=17)
 
 ## Implement (Python, from scratch)
 - [ ] Set up the environment (`requirements.txt`), verify `numpy`, `scipy`, `matplotlib`.

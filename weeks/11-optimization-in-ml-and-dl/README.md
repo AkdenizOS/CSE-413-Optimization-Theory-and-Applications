@@ -16,7 +16,8 @@
 - Model compression: pruning (ℓ0/ℓ1 relaxation), quantization (as integer programming), distillation.
 
 ## Reading
-- Nocedal & Wright — Ch. 8 (calculating derivatives / automatic differentiation)
+
+- [Nocedal & Wright — Ch. 8 (calculating derivatives = automatic differentiation)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=212)
 - Goodfellow et al., *Deep Learning* — Ch. 8 (optimization for training deep models)
 - PyTorch autograd docs
 

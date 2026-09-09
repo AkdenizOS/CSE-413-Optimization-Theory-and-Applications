@@ -16,8 +16,8 @@
 - NP-hardness — this is where "prove optimality" starts getting expensive.
 
 ## Reading
-- Winston — Ch. 9 (integer programming)
-- Taha, *Yöneylem Araştırması* — integer programming chapter (TR)
+
+- [Winston — Ch. 9 (integer programming)](../../resources/books/winston-operations-research.pdf#page=491)
 
 ## Implement
 - [ ] Branch-and-bound for binary IPs using your simplex from Week 3.

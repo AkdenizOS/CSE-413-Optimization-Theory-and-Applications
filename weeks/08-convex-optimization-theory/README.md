@@ -15,9 +15,12 @@
 - Hierarchy: LP → QP → QCQP → SOCP → SDP; each is a special case of the next.
 
 ## Reading
-- Boyd & Vandenberghe — Ch. 2 (convex sets), Ch. 3 (convex functions), Ch. 4 (convex problems)
+
+- [Boyd — Ch. 2 (convex sets)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=35)
+- [Boyd — Ch. 3 (convex functions)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=81)
+- [Boyd — Ch. 4 (convex optimization problems)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=141)
 - Boyd slides — Sections 2, 3, 4
-- Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Dışbükey Kümeler", "Dışbükey Fonksiyonlar", "Dışbükey Optimizasyon", "Konik Optimizasyon"; 92 worked examples
+- Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Dışbükey Kümeler/Fonksiyonlar/Optimizasyon", "Konik Optimizasyon"; 92 worked examples
 
 ## Implement
 - [ ] Convexity checker for a quadratic (eigenvalue test) and a sampled numerical check (`f(θx+(1−θ)y) ≤ θf(x)+(1−θ)f(y)`).

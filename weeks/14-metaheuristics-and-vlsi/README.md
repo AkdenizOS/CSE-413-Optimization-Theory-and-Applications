@@ -17,12 +17,12 @@
 - VLSI: placement as quadratic/nonconvex assignment; gate sizing as a geometric program (convex! — see Boyd Ch. 4.5).
 
 ## Reading
-- Karaboga (2005), TR06 — `resources/papers/karaboga-2005-abc-tr06.pdf` (the original ABC paper)
-- ABC pseudocode — `resources/papers/karaboga-abc-pseudocode.pdf` (implement from this)
-- ABC step-by-step trace — `resources/papers/karaboga-abc-step-by-step.pdf` (debug against this)
-- Karaboga & Basturk (2007), J. Global Optimization 39(3) — paywalled, get via the university's Springer subscription; it is TR06 plus GA/PSO/DE benchmarks
-- Boyd & Vandenberghe — Ch. 4.5 (geometric programming), Ch. 8; slides "Geometric programming"
-- Boyd et al., *Digital circuit optimization via geometric programming* (2005)
+
+- Karaboga (2005), TR06 — [original ABC paper](../../resources/papers/karaboga-2005-abc-tr06.pdf)
+- [ABC pseudocode](../../resources/papers/karaboga-abc-pseudocode.pdf) — implement from this
+- [ABC step-by-step trace](../../resources/papers/karaboga-abc-step-by-step.pdf) — debug against this
+- [Boyd — Ch. 4.5 (geometric programming) — gate sizing is a GP](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=174)
+- Karaboga & Basturk (2007), J. Global Optimization 39(3) — paywalled, get via the university's Springer subscription
 
 ## Implement
 - [ ] SA, GA, PSO, ABC behind one common `optimize(f, bounds, budget, seed)` interface.

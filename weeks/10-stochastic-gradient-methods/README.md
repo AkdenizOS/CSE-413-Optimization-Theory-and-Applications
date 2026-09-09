@@ -16,9 +16,10 @@
 - Proximal operator `prox_{th}(v)`; soft-thresholding; ISTA and FISTA for `‖x‖₁`.
 
 ## Reading
-- Nocedal & Wright — Ch. 7 (large-scale), stochastic sections
-- Boyd — subgradient/proximal lecture notes (Stanford EE364b)
+
+- [Nocedal & Wright — Ch. 7 (large-scale optimization)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
 - Kingma & Ba, *Adam* (2014); Beck & Teboulle, *FISTA* (2009)
+- Boyd, Stanford EE364b — subgradient and proximal method notes
 
 ## Implement
 - [ ] SGD, momentum, Nesterov, AdaGrad, RMSProp, Adam — one common interface.
