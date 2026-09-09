@@ -38,7 +38,7 @@ in the syllabus.
 | 11 | ML/DL optimization | Nocedal Ch. 8 (calculating derivatives = autodiff) · Goodfellow Ch. 8 · PyTorch docs |
 | 12 | Integer programming | Winston Ch. 9 (integer programming) |
 | 13 | DP and networks | Winston Ch. 7 (transportation/assignment), Ch. 8 (network models), Ch. 18 (deterministic DP) · Pınar *Doğrusal* — Ağ Problemleri, Çizge Kuramı, En Kısa Yol |
-| 14 | Metaheuristics, VLSI | Karaboga TR06 (2005, free) · Boyd Ch. 4.5 (geometric programming) |
+| 14 | Metaheuristics, VLSI | Karaboga TR06 + pseudocode (`resources/papers/`) · Boyd Ch. 4.5 (geometric programming) |
 
 ## Files in this repository
 
@@ -50,23 +50,30 @@ in the syllabus.
 | `books/winston-operations-research.pdf` | Winston (2004), Brooks/Cole | 24 chapters; 3 LP, 4 simplex, 5-6 sensitivity/duality, 7 transportation, 8 networks, 9 integer programming, 18 deterministic DP |
 | `books/pinar-disbukeylik-ve-optimizasyon.pdf` | Pınar (2020), Seçkin — 290 pp. (TR) | Convex sets/functions/optimization, Lagrange & Fenchel duality, conic optimization, optimality conditions, matrix-variable problems, DCP. **92 examples, 122 solved exercises** |
 | `books/pinar-dogrusal-optimizasyondan-cikis.pdf` | Pınar (2019), Seçkin — 259 pp. (TR) | Polyhedra, duality, Lagrange method, theorems of alternatives, assignment, network problems, graph theory, simplex, interior point, shortest path. **17 applications, 61 exercises** |
+| `papers/karaboga-2005-abc-tr06.pdf` | Karaboga (2005), Technical Report TR06, Erciyes Üniversitesi | The original ABC paper, 10 pp. |
+| `papers/karaboga-abc-pseudocode.pdf` | abc.erciyes.edu.tr | Detailed ABC pseudocode, 2 pp. |
+| `papers/karaboga-abc-step-by-step.pdf` | abc.erciyes.edu.tr | Worked step-by-step ABC trace, 5 pp. |
 | `slides/bv_cvxslides.pdf` | Boyd/Vandenberghe/Nobel, 2024 revision | 11 sections, 402 pp. |
 | `slides/bv_cvxslides_original.pdf` | Boyd/Vandenberghe, 2016 | same deck, older |
 
 ## Missing syllabus references and what to use instead
 
 **Karaboğa, D. (2014). *Yapay zeka optimizasyon algoritmaları*. Nobel Akademik.**
-Needed for week 14 (ABC). Not freely available — Turkish print book, buy or borrow
-from the library. Free substitutes that cover ABC completely:
+Needed for week 14 (ABC). Turkish print book, not available online — buy or borrow
+from the library. Covered instead by the three papers now in `resources/papers/`,
+downloaded from Karaboğa's own site: the original TR06 report, the detailed
+pseudocode, and a step-by-step worked trace. That is enough to implement ABC.
 
-- Karaboga, D. (2005). *An idea based on honey bee swarm for numerical
-  optimization*. Technical Report TR06, Erciyes University. The original ABC paper,
-  by the same author, free: https://abc.erciyes.edu.tr/
-- Karaboga & Basturk (2007). *A powerful and efficient algorithm for numerical
-  function optimization: artificial bee colony (ABC) algorithm*. Journal of Global
-  Optimization 39(3), 459-471.
-- https://abc.erciyes.edu.tr/ also hosts reference implementations and a
-  publication list.
+**Karaboga & Basturk (2007). *A powerful and efficient algorithm for numerical
+function optimization: artificial bee colony (ABC) algorithm*. J. Global
+Optimization 39(3), 459-471.** DOI [10.1007/s10898-007-9149-x](https://doi.org/10.1007/s10898-007-9149-x).
+Paywalled at Springer, and the author has not self-archived it. Akdeniz University
+has a Springer subscription — download it from campus network or through the
+library proxy. Content-wise it is the journal version of TR06 plus benchmark
+comparisons against GA, PSO and DE, so TR06 covers the algorithm itself.
+
+ABC reference implementations (Python, Rust, C#, Delphi):
+https://github.com/artificialbeecolony
 
 For SA, GA and PSO the original papers are all free: Kirkpatrick et al. (1983,
 *Science*), Holland (1975) / Goldberg (1989), Kennedy & Eberhart (1995, ICNN).
