@@ -18,6 +18,7 @@
 ## Reading
 - Boyd & Vandenberghe — Ch. 5 (all), especially 5.5 (optimality conditions) and Example 5.2 (water-filling)
 - Nocedal & Wright — Ch. 12 (theory of constrained optimization)
+- Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Lagrange Eştersliği", "Optimallik Koşulları"; 122 solved exercises
 
 ## Implement
 - [ ] Water-filling: closed-form bisection on `ν` vs. CVXPY solution.

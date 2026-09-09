@@ -16,7 +16,8 @@
 
 ## Reading
 - Winston, *Operations Research* — Ch. 3 (LP intro), Ch. 4 (simplex)
-- Pınar, *Doğrusal Optimizasyondan Çıkış* (TR)
+- Nocedal & Wright — Ch. 13 (LP: the simplex method)
+- Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Çokyüzlüler", "Simpleks Yöntemi"
 - Taha, *Yöneylem Araştırması* — LP chapters
 
 ## Implement

@@ -17,7 +17,7 @@
 ## Reading
 - Boyd & Vandenberghe — Ch. 2 (convex sets), Ch. 3 (convex functions), Ch. 4 (convex problems)
 - Boyd slides — Sections 2, 3, 4
-- Pınar, *Dışbükeylik ve Optimizasyon* (TR)
+- Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Dışbükey Kümeler", "Dışbükey Fonksiyonlar", "Dışbükey Optimizasyon", "Konik Optimizasyon"; 92 worked examples
 
 ## Implement
 - [ ] Convexity checker for a quadratic (eigenvalue test) and a sampled numerical check (`f(θx+(1−θ)y) ≤ θf(x)+(1−θ)f(y)`).

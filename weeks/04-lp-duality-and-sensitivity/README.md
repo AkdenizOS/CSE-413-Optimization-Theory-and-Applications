@@ -15,7 +15,8 @@
 - Dual simplex; farkas lemma / certificates of infeasibility.
 
 ## Reading
-- Winston — Ch. 6 (sensitivity analysis and duality)
+- Winston — Ch. 5 (sensitivity analysis: applied approach), Ch. 6 (sensitivity analysis and duality)
+- Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Eşterslik" (duality), "İkili Seçenek Teoremleri" (theorems of alternatives)
 - Boyd & Vandenberghe — Ch. 5.1-5.2 (LP duality as a special case)
 - Boyd slides — Section 5 "Duality" (`bv_cvxslides.pdf`, p. 2815+ of text)
 

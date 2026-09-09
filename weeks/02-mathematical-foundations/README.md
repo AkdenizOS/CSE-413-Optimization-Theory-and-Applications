@@ -18,7 +18,8 @@
 ## Reading
 - Nocedal & Wright — Ch. 2 (fundamentals of unconstrained optimization), Appendix A
 - Boyd & Vandenberghe — Appendix A, Ch. 2.1-2.2, Ch. 3.1
-- Pınar, *Dışbükeylik ve Optimizasyon* — early chapters (TR)
+- Pınar, *Dışbükeylik ve Optimizasyon* (TR) — "Dışbükey Kümeler", "Dışbükey Fonksiyonlar"
+- Winston — Ch. 2 (basic linear algebra refresher)
 
 ## Implement
 - [ ] Numerical gradient (finite differences) and check it against an analytic gradient.

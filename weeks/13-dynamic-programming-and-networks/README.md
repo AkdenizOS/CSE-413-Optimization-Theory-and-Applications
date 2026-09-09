@@ -17,7 +17,8 @@
 
 ## Reading
 - Winston — Ch. 8 (network models), Ch. 18-19 (deterministic dynamic programming)
-- Taha — network models chapter (TR)
+- Winston — Ch. 7 (transportation, assignment, transshipment)
+- Pınar, *Doğrusal Optimizasyondan Çıkış* (TR) — "Ağ Problemleri", "Çizge Kuramı", "En Kısa Yol Problemi", "Atama Problemi"
 
 ## Implement
 - [ ] DP: knapsack, longest common subsequence, and one routing problem.

@@ -17,7 +17,9 @@
 - VLSI: placement as quadratic/nonconvex assignment; gate sizing as a geometric program (convex! — see Boyd Ch. 4.5).
 
 ## Reading
-- Karaboğa, *Yapay Zeka Optimizasyon Algoritmaları* (TR) — primary source for ABC
+- Karaboga, D. (2005). *An idea based on honey bee swarm for numerical optimization*. Technical Report TR06, Erciyes University — the original ABC paper, freely available: https://abc.erciyes.edu.tr/
+- Karaboga & Basturk (2007). *A powerful and efficient algorithm for numerical function optimization: artificial bee colony (ABC) algorithm*. J. Global Optimization 39(3)
+- Karaboğa, *Yapay zeka optimizasyon algoritmaları* (TR) — course reference, not in this repo
 - Boyd & Vandenberghe — Ch. 4.5 (geometric programming), Ch. 8; slides "Geometric programming"
 - Boyd et al., *Digital circuit optimization via geometric programming* (2005)
 
