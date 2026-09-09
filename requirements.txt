@@ -1,0 +1,21 @@
+# Core numerics
+numpy
+scipy
+matplotlib
+
+# Convex modeling (weeks 9, 14)
+cvxpy
+
+# Integer programming (week 12)
+pulp
+
+# Networks (week 13)
+networkx
+
+# ML / deep learning (weeks 10, 11)
+scikit-learn
+torch
+
+# Notebooks and data
+jupyter
+pandas

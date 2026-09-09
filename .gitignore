@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# Large experiment output (keep summary figures/tables, not raw dumps)
+project/results/raw/
