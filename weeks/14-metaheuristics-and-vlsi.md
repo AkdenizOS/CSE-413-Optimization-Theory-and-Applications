@@ -2,6 +2,8 @@
 
 > Syllabus (TR): *Metasezgisel yöntemler ve VLSI uygulamaları: benzetimli tavlama, genetik algoritmalar, parçacık sürüsü, yapay arı kolonisi (ABC); yerleşim ve kapı boyutlandırma*
 
+**Builds on:** [Week 8 · Convex Optimization I: Sets, Functions, Problem Hierarchy](08-convex-optimization-theory.md) · [Week 9 · Convex Optimization II: CVXPY and Disciplined Convex Programming](09-convex-optimization-cvxpy.md)
+
 ## Goals
 - Implement SA, GA, PSO, and ABC from scratch.
 - Design an *honest* experiment when optimality cannot be proven (course outcome Ö03).
@@ -18,10 +20,10 @@
 
 ## Reading
 
-- Karaboga (2005), TR06 — [original ABC paper](../../resources/papers/karaboga-2005-abc-tr06.pdf)
-- [ABC pseudocode](../../resources/papers/karaboga-abc-pseudocode.pdf) — implement from this
-- [ABC step-by-step trace](../../resources/papers/karaboga-abc-step-by-step.pdf) — debug against this
-- [Boyd — Ch. 4.5 (geometric programming) — gate sizing is a GP](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=174)
+- Karaboga (2005), TR06 — [original ABC paper](../resources/papers/karaboga-2005-abc-tr06.pdf)
+- [ABC pseudocode](../resources/papers/karaboga-abc-pseudocode.pdf) — implement from this
+- [ABC step-by-step trace](../resources/papers/karaboga-abc-step-by-step.pdf) — debug against this
+- [Boyd — Ch. 4.5 (geometric programming) — gate sizing is a GP](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=174)
 - Karaboga & Basturk (2007), J. Global Optimization 39(3) — paywalled, get via the university's Springer subscription
 
 ## Implement
@@ -34,3 +36,13 @@
 - [ ] Notes written
 - [ ] Comparison uses equal budget and ≥30 seeds
 - [ ] Gate sizing GP solution beats or matches the heuristic, and I can say why
+
+## My notes
+
+<!-- Lecture: what was actually covered. -->
+
+<!-- Derivations worked out by hand. -->
+
+<!-- Questions to ask the instructor. -->
+
+<!-- Exam-worthy: formulas, conditions, algorithm steps. -->

@@ -2,6 +2,9 @@
 
 > Syllabus (TR): *Kısıtsız optimizasyon II: Newton yöntemi, quasi-Newton (BFGS, L-BFGS), Gauss–Newton; yöntem seçim rehberi*
 
+**Builds on:** [Week 5 · Unconstrained Optimization I: Gradient Descent](05-unconstrained-gradient-descent.md)
+**Leads to:** [Week 10 · Stochastic Gradient Methods](10-stochastic-gradient-methods.md)
+
 ## Goals
 - Implement Newton's method with the Newton decrement as stopping criterion.
 - Implement BFGS and L-BFGS; understand the secant condition.
@@ -17,10 +20,10 @@
 
 ## Reading
 
-- [Nocedal & Wright — Ch. 6 (quasi-Newton methods)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=154)
-- [Nocedal & Wright — Ch. 7 (large-scale unconstrained optimization, L-BFGS)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
-- [Nocedal & Wright — Ch. 10 (least-squares problems)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=264)
-- [Boyd — Ch. 9.5 (Newton's method)](../../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=498)
+- [Nocedal & Wright — Ch. 6 (quasi-Newton methods)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=154)
+- [Nocedal & Wright — Ch. 7 (large-scale unconstrained optimization, L-BFGS)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
+- [Nocedal & Wright — Ch. 10 (least-squares problems)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=264)
+- [Boyd — Ch. 9.5 (Newton's method)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=498)
 
 ## Implement
 - [ ] Newton with backtracking; report the two convergence phases.
@@ -32,3 +35,13 @@
 - [ ] Notes written
 - [ ] Quadratic convergence observed (error squares each step near `x*`)
 - [ ] Method-selection guide written in `notes.md`
+
+## My notes
+
+<!-- Lecture: what was actually covered. -->
+
+<!-- Derivations worked out by hand. -->
+
+<!-- Questions to ask the instructor. -->
+
+<!-- Exam-worthy: formulas, conditions, algorithm steps. -->

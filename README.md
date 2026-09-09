@@ -19,20 +19,20 @@ quality when a proof is impossible. Every method is implemented from scratch in 
 
 | # | Topic | Folder |
 |---|-------|--------|
-| 1 | Introduction to optimization: modeling | [weeks/01](weeks/01-introduction-and-modeling/) |
-| 2 | Mathematical foundations: norms, gradient, Taylor, convexity | [weeks/02](weeks/02-mathematical-foundations/) |
-| 3 | Linear programming I: geometry and simplex | [weeks/03](weeks/03-linear-programming-simplex/) |
-| 4 | Linear programming II: duality and sensitivity | [weeks/04](weeks/04-lp-duality-and-sensitivity/) |
-| 5 | Unconstrained I: gradient descent, line search | [weeks/05](weeks/05-unconstrained-gradient-descent/) |
-| 6 | Unconstrained II: Newton, BFGS, L-BFGS, Gauss-Newton | [weeks/06](weeks/06-unconstrained-newton-quasi-newton/) |
-| 7 | Lagrange multipliers and KKT conditions | [weeks/07](weeks/07-lagrange-and-kkt/) |
-| 8 | Convex optimization I: sets, functions, hierarchy | [weeks/08](weeks/08-convex-optimization-theory/) |
-| 9 | Convex optimization II: CVXPY and DCP | [weeks/09](weeks/09-convex-optimization-cvxpy/) |
-| 10 | Stochastic gradient methods: SGD, momentum, Adam, ISTA | [weeks/10](weeks/10-stochastic-gradient-methods/) |
-| 11 | Optimization in ML and deep learning | [weeks/11](weeks/11-optimization-in-ml-and-dl/) |
-| 12 | Discrete I: integer programming, branch and bound | [weeks/12](weeks/12-integer-programming/) |
-| 13 | Discrete II: dynamic programming and networks | [weeks/13](weeks/13-dynamic-programming-and-networks/) |
-| 14 | Metaheuristics and VLSI applications | [weeks/14](weeks/14-metaheuristics-and-vlsi/) |
+| 1 | Introduction to optimization: modeling | [weeks/01](weeks/01-introduction-and-modeling.md) |
+| 2 | Mathematical foundations: norms, gradient, Taylor, convexity | [weeks/02](weeks/02-mathematical-foundations.md) |
+| 3 | Linear programming I: geometry and simplex | [weeks/03](weeks/03-linear-programming-simplex.md) |
+| 4 | Linear programming II: duality and sensitivity | [weeks/04](weeks/04-lp-duality-and-sensitivity.md) |
+| 5 | Unconstrained I: gradient descent, line search | [weeks/05](weeks/05-unconstrained-gradient-descent.md) |
+| 6 | Unconstrained II: Newton, BFGS, L-BFGS, Gauss-Newton | [weeks/06](weeks/06-unconstrained-newton-quasi-newton.md) |
+| 7 | Lagrange multipliers and KKT conditions | [weeks/07](weeks/07-lagrange-and-kkt.md) |
+| 8 | Convex optimization I: sets, functions, hierarchy | [weeks/08](weeks/08-convex-optimization-theory.md) |
+| 9 | Convex optimization II: CVXPY and DCP | [weeks/09](weeks/09-convex-optimization-cvxpy.md) |
+| 10 | Stochastic gradient methods: SGD, momentum, Adam, ISTA | [weeks/10](weeks/10-stochastic-gradient-methods.md) |
+| 11 | Optimization in ML and deep learning | [weeks/11](weeks/11-optimization-in-ml-and-dl.md) |
+| 12 | Discrete I: integer programming, branch and bound | [weeks/12](weeks/12-integer-programming.md) |
+| 13 | Discrete II: dynamic programming and networks | [weeks/13](weeks/13-dynamic-programming-and-networks.md) |
+| 14 | Metaheuristics and VLSI applications | [weeks/14](weeks/14-metaheuristics-and-vlsi.md) |
 
 ## Grading
 
@@ -48,15 +48,20 @@ Tracked in [docs/grading.md](docs/grading.md).
 ## Repository layout
 
 ```
-docs/          Syllabus summary, grading tracker, resource map, glossary
-weeks/NN-*/    Per-week README (goals, reading, tasks), notes.md, code/
-assignments/   hw-01 .. hw-04
-project/       Term project (25%)
-exams/         Midterm and final preparation
-src/optlib/    From-scratch implementations reused across weeks
-notebooks/     Exploratory Jupyter notebooks
-resources/     Syllabus PDF, textbooks, slide decks
+docs/            Syllabus summary, grading tracker, resource map, glossary
+weeks/NN-*.md    One note per week: goals, reading, tasks, my notes
+weeks/code/      Per-week scratch code
+src/optlib/      From-scratch implementations reused across weeks
+assignments/     hw-01 .. hw-04
+project/         Term project (25%)
+exams/           Midterm and final preparation
+notebooks/       Exploratory Jupyter notebooks
+resources/       Syllabus PDF, textbooks, papers, slide decks
 ```
+
+Each week note links to the weeks it builds on and leads to, so Obsidian's graph
+view shows the actual dependency chain — simplex (week 3) feeding branch-and-bound
+(week 12) and max-flow (week 13), duality (week 4) feeding KKT (week 7), and so on.
 
 ## Setup
 

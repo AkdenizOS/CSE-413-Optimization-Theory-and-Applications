@@ -2,6 +2,8 @@
 
 > Syllabus (TR): *Makine öğrenmesi ve derin öğrenmede optimizasyon: deneysel risk minimizasyonu, geri yayılım = otomatik türev, eğitim reçeteleri, model sıkıştırma*
 
+**Builds on:** [Week 10 · Stochastic Gradient Methods](10-stochastic-gradient-methods.md)
+
 ## Goals
 - Frame learning as empirical risk minimization (ERM).
 - See backpropagation as reverse-mode automatic differentiation, and implement a tiny autodiff engine.
@@ -17,7 +19,7 @@
 
 ## Reading
 
-- [Nocedal & Wright — Ch. 8 (calculating derivatives = automatic differentiation)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=212)
+- [Nocedal & Wright — Ch. 8 (calculating derivatives = automatic differentiation)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=212)
 - Goodfellow et al., *Deep Learning* — Ch. 8 (optimization for training deep models)
 - PyTorch autograd docs
 
@@ -30,3 +32,13 @@
 - [ ] Notes written
 - [ ] Autograd gradients match PyTorch to 1e-6
 - [ ] Can explain why reverse-mode AD costs ~2× the forward pass
+
+## My notes
+
+<!-- Lecture: what was actually covered. -->
+
+<!-- Derivations worked out by hand. -->
+
+<!-- Questions to ask the instructor. -->
+
+<!-- Exam-worthy: formulas, conditions, algorithm steps. -->

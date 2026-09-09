@@ -2,6 +2,9 @@
 
 > Syllabus (TR): *Stokastik gradyan yöntemleri: SGD, momentum, Adam, öğrenme oranı çizelgeleri, proksimal yöntemler/ISTA*
 
+**Builds on:** [Week 5 · Unconstrained Optimization I: Gradient Descent](05-unconstrained-gradient-descent.md) · [Week 6 · Unconstrained Optimization II: Newton and Quasi-Newton](06-unconstrained-newton-quasi-newton.md) · [Week 9 · Convex Optimization II: CVXPY and Disciplined Convex Programming](09-convex-optimization-cvxpy.md)
+**Leads to:** [Week 11 · Optimization in Machine Learning and Deep Learning](11-optimization-in-ml-and-dl.md)
+
 ## Goals
 - Implement SGD and its main variants from scratch.
 - Understand why noise changes the convergence story vs. Weeks 5-6.
@@ -17,16 +20,26 @@
 
 ## Reading
 
-- [Nocedal & Wright — Ch. 7 (large-scale optimization)](../../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
+- [Nocedal & Wright — Ch. 7 (large-scale optimization)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
 - Kingma & Ba, *Adam* (2014); Beck & Teboulle, *FISTA* (2009)
 - Boyd, Stanford EE364b — subgradient and proximal method notes
 
 ## Implement
 - [ ] SGD, momentum, Nesterov, AdaGrad, RMSProp, Adam — one common interface.
 - [ ] Logistic regression on a real dataset; compare optimizers on equal budget.
-- [ ] ISTA + FISTA for LASSO; compare against the CVXPY solution from Week 9.
+- [ ] ISTA + FISTA for LASSO; compare against the CVXPY solution from [Week 9](09-convex-optimization-cvxpy.md).
 
 ## Checklist
 - [ ] Notes written
 - [ ] Fair comparison: same seeds, same epoch budget, multiple runs
 - [ ] Can explain Adam's bias correction term
+
+## My notes
+
+<!-- Lecture: what was actually covered. -->
+
+<!-- Derivations worked out by hand. -->
+
+<!-- Questions to ask the instructor. -->
+
+<!-- Exam-worthy: formulas, conditions, algorithm steps. -->

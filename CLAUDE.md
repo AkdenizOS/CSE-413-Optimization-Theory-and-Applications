@@ -15,8 +15,12 @@ assignments, and a term project — not a production system.
 - **Language:** English for everything committed — READMEs, notes, code, comments.
   Turkish appears only where the source is Turkish (syllabus quotes, glossary,
   Turkish reference books).
-- **Week folders:** `weeks/NN-topic-slug/` with `README.md` (goals, reading, tasks,
-  checklist), `notes.md` (personal notes taken during/after lecture), and `code/`.
+- **Week notes:** one file per week, `weeks/NN-topic-slug.md`, holding goals,
+  reading, tasks, checklist and the `## My notes` section. Scratch code for that
+  week goes in `weeks/code/week-NN/`.
+- **Links:** plain Markdown links, never `[[wikilinks]]` — Markdown links show up in
+  Obsidian's graph and backlinks *and* still work on GitHub. Book citations link to
+  the exact page (`...pdf#page=N`); offsets are Boyd +14, Nocedal +19, Winston +16.
 - **Shared code:** anything reused by two or more weeks moves to `src/optlib/`.
   One-off experiments stay in the week's `code/`.
 - **Every implementation is verified** against a reference solver (SciPy, CVXPY,

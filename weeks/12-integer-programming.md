@@ -2,9 +2,12 @@
 
 > Syllabus (TR): *Ayrık optimizasyon I — Tamsayılı programlama: modelleme teknikleri (büyük-M, ya-ya da), LP gevşetmesi, dal-sınır, kesme düzlemleri*
 
+**Builds on:** [Week 3 · Linear Programming I: Geometry and the Simplex Method](03-linear-programming-simplex.md)
+**Leads to:** [Week 13 · Discrete Optimization II: Dynamic Programming and Network Optimization](13-dynamic-programming-and-networks.md)
+
 ## Goals
 - Model logical conditions with binary variables.
-- Implement branch-and-bound on top of your Week-3 LP solver.
+- Implement branch-and-bound on top of your [Week 3](03-linear-programming-simplex.md) LP solver.
 - Understand LP relaxation quality and cutting planes.
 
 ## Key concepts
@@ -17,10 +20,10 @@
 
 ## Reading
 
-- [Winston — Ch. 9 (integer programming)](../../resources/books/winston-operations-research.pdf#page=491)
+- [Winston — Ch. 9 (integer programming)](../resources/books/winston-operations-research.pdf#page=491)
 
 ## Implement
-- [ ] Branch-and-bound for binary IPs using your simplex from Week 3.
+- [ ] Branch-and-bound for binary IPs using your simplex from [Week 3](03-linear-programming-simplex.md).
 - [ ] Knapsack: DP vs. B&B vs. LP relaxation bound.
 - [ ] One Gomory cut round; measure gap reduction.
 - [ ] Model + solve a real instance with PuLP/CBC; compare node counts.
@@ -29,3 +32,13 @@
 - [ ] Notes written
 - [ ] B&B returns provably optimal solutions on ≥20 random instances
 - [ ] Can write a big-M constraint correctly without looking it up
+
+## My notes
+
+<!-- Lecture: what was actually covered. -->
+
+<!-- Derivations worked out by hand. -->
+
+<!-- Questions to ask the instructor. -->
+
+<!-- Exam-worthy: formulas, conditions, algorithm steps. -->
