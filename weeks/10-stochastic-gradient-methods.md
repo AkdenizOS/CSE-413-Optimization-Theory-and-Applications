@@ -34,12 +34,7 @@
 - [ ] Fair comparison: same seeds, same epoch budget, multiple runs
 - [ ] Can explain Adam's bias correction term
 
-## My notes
+---
 
-<!-- Lecture: what was actually covered. -->
-
-<!-- Derivations worked out by hand. -->
-
-<!-- Questions to ask the instructor. -->
-
-<!-- Exam-worthy: formulas, conditions, algorithm steps. -->
+Your own notes for this week go in `terms/<your-term>/notes/week-10.md`, not here.
+This file is the shared plan — improve it if the course changes, but keep it general.

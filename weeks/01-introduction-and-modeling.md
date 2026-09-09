@@ -32,12 +32,7 @@
 - [ ] Code committed under `code/`
 - [ ] Self-test: can I write down the standard form of 3 problems from my own field?
 
-## My notes
+---
 
-<!-- Lecture: what was actually covered. -->
-
-<!-- Derivations worked out by hand. -->
-
-<!-- Questions to ask the instructor. -->
-
-<!-- Exam-worthy: formulas, conditions, algorithm steps. -->
+Your own notes for this week go in `terms/<your-term>/notes/week-01.md`, not here.
+This file is the shared plan — improve it if the course changes, but keep it general.

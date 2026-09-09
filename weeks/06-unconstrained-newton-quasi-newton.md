@@ -36,12 +36,7 @@
 - [ ] Quadratic convergence observed (error squares each step near `x*`)
 - [ ] Method-selection guide written in `notes.md`
 
-## My notes
+---
 
-<!-- Lecture: what was actually covered. -->
-
-<!-- Derivations worked out by hand. -->
-
-<!-- Questions to ask the instructor. -->
-
-<!-- Exam-worthy: formulas, conditions, algorithm steps. -->
+Your own notes for this week go in `terms/<your-term>/notes/week-06.md`, not here.
+This file is the shared plan — improve it if the course changes, but keep it general.

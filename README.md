@@ -77,3 +77,16 @@ pip install -r requirements.txt
 - **Ö02** Explain and implement core algorithms from scratch; use SciPy, CVXPY, PuLP/CBC, PyTorch.
 - **Ö03** Certify optimality via duality/KKT; where impossible, measure heuristic performance with a proper experiment design (equal budget, multiple seeds, statistics).
 - **Ö04** Apply optimization to ML, network routing, and VLSI design; deliver an end-to-end term project with a written report and oral presentation.
+
+## Who changes what
+
+| File | Who edits it | When |
+|------|-------------|------|
+| `weeks/NN-*.md` | **anyone** | Only when the course itself changes — a new topic, a better reading, a correction. Never for personal notes. |
+| `docs/*.md` | **anyone** | When you learn something durable: a new exam pattern, a better source. |
+| `terms/<your-term>/notes/week-NN.md` | **only you** | Every week. This is your notebook. |
+| `terms/<your-term>/` | **only you** | Your slides, labs, assignments, submissions. |
+| `exams/past/<term>/` | **anyone** | When you get hold of a new paper. |
+
+Two students in different years never touch the same file except to improve the
+shared plan — which is the point.

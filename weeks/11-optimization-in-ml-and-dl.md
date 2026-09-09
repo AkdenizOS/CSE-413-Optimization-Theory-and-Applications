@@ -33,12 +33,7 @@
 - [ ] Autograd gradients match PyTorch to 1e-6
 - [ ] Can explain why reverse-mode AD costs ~2× the forward pass
 
-## My notes
+---
 
-<!-- Lecture: what was actually covered. -->
-
-<!-- Derivations worked out by hand. -->
-
-<!-- Questions to ask the instructor. -->
-
-<!-- Exam-worthy: formulas, conditions, algorithm steps. -->
+Your own notes for this week go in `terms/<your-term>/notes/week-11.md`, not here.
+This file is the shared plan — improve it if the course changes, but keep it general.

@@ -34,12 +34,7 @@
 - [ ] KKT checker validates solutions from Weeks 3-6
 - [ ] Can derive water-filling on paper without notes
 
-## My notes
+---
 
-<!-- Lecture: what was actually covered. -->
-
-<!-- Derivations worked out by hand. -->
-
-<!-- Questions to ask the instructor. -->
-
-<!-- Exam-worthy: formulas, conditions, algorithm steps. -->
+Your own notes for this week go in `terms/<your-term>/notes/week-07.md`, not here.
+This file is the shared plan — improve it if the course changes, but keep it general.
