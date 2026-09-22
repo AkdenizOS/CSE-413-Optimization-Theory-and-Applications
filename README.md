@@ -17,7 +17,7 @@ quality when a proof is impossible. Every method is implemented from scratch in 
 
 ## Weekly plan
 
-| # | Topic | Folder |
+| # | Topic | Note |
 |---|-------|--------|
 | 1 | Introduction to optimization: modeling | [weeks/01](weeks/01-introduction-and-modeling.md) |
 | 2 | Mathematical foundations: norms, gradient, Taylor, convexity | [weeks/02](weeks/02-mathematical-foundations.md) |
@@ -43,21 +43,24 @@ quality when a proof is impossible. Every method is implemented from scratch in 
 | Term project | 1 | 25% |
 | Final exam | 1 | 40% |
 
-Tracked in [docs/grading.md](docs/grading.md).
+Tracked in [course-info.md](course-info.md#grading-tracker). Assignment and project
+briefs: [assignments/README.md](assignments/README.md), [assignments/project.md](assignments/project.md).
+Exam preparation: [exams/README.md](exams/README.md).
 
-## Repository layout
+## Layout
 
 ```
-docs/            Syllabus summary, grading tracker, resource map, glossary
-weeks/NN-*.md    One note per week: goals, reading, tasks, my notes
-weeks/code/      Per-week scratch code
+README.md        This page
+course-info.md   Syllabus summary, grading tracker, resource map (page offsets), glossary
+weeks/NN-*.md    One file per week: the shared plan on top, everyone's notes below
+exams/           Past papers, a practice midterm (EXAMPLE/), midterm and final prep
+assignments/     Assignment and term-project briefs; your own work in <term>-<you>/
 src/optlib/      From-scratch implementations reused across weeks
-assignments/     hw-01 .. hw-04
-project/         Term project (25%)
-exams/           Midterm and final preparation
-notebooks/       Exploratory Jupyter notebooks
-resources/       Syllabus PDF, textbooks, papers, slide decks
+resources/       Syllabus PDF, books/, slides/, papers/, 2026-2027-fall/ (instructor material)
 ```
+
+Per-week scratch code goes in `code/week-NN/` and exploratory Jupyter notebooks in
+`notebooks/` — create them when the first file lands.
 
 Each week note links to the weeks it builds on and leads to, so Obsidian's graph
 view shows the actual dependency chain — simplex (week 3) feeding branch-and-bound
@@ -78,16 +81,42 @@ pip install -r requirements.txt
 - **Ö03** Certify optimality via duality/KKT; where impossible, measure heuristic performance with a proper experiment design (equal budget, multiple seeds, statistics).
 - **Ö04** Apply optimization to ML, network routing, and VLSI design; deliver an end-to-end term project with a written report and oral presentation.
 
+## Taking notes
+
+Open the week, scroll to the bottom, write under your own heading:
+
+```markdown
+## Notes — <Name> (<term>)
+### Lecture
+### Worked out by hand
+### Questions
+### Exam-worthy
+```
+
+Add your heading below the existing ones and never edit someone else's section —
+different sections merge in git without conflicts.
+
 ## Who changes what
 
-| File | Who edits it | When |
+| What | Who edits it | When |
 |------|-------------|------|
-| `weeks/NN-*.md` | **anyone** | Only when the course itself changes — a new topic, a better reading, a correction. Never for personal notes. |
-| `docs/*.md` | **anyone** | When you learn something durable: a new exam pattern, a better source. |
-| `terms/<your-term>/people/<you>/notes/week-NN.md` | **only you** | Every week. This is your notebook. |
-| `terms/<your-term>/people/<you>/` | **only you** | Your assignments, projects, submissions. |
-| `terms/<your-term>/course/` | **anyone in that term** | Slides, syllabus and lab sheets the instructor issued. |
-| `exams/past/<term>/` | **anyone** | When you get hold of a new paper — blank or answered. Exam papers never go under `terms/`. |
+| Top of `weeks/NN-*.md` (goals, reading, tasks) | **anyone** | Only when the course itself changes — a new topic, a better reading, a correction. Never for personal notes. |
+| `## Notes — <you>` in a week file | **only you** | Every week. This is your notebook. |
+| `course-info.md`, `exams/README.md`, `assignments/README.md`, `assignments/project.md` | **anyone** | When you learn something durable: a new exam pattern, a better source. |
+| `assignments/<term>-<you>/` | **only you** | Your assignments, projects, submissions. |
+| `resources/<term>/` | **anyone in that term** | Slides, syllabus and lab sheets the instructor issued. |
+| `exams/` | **anyone** | When you get hold of a new paper — blank or answered. Put the writer's surname in the filename (`2026-2027-final-answered-altungoz.pdf`). |
 
 Two students in different years never touch the same file except to improve the
 shared plan — which is the point.
+
+## Terms
+
+| Term | Instructor | Schedule | Midterm | Final | Notes |
+|------|-----------|----------|---------|-------|-------|
+| Fall 2026-2027 | Arş. Gör. Dr. Taha Yiğit Alkan | TBD | TBD | TBD | Efe — in every week file; slides and syllabus in [resources/2026-2027-fall/](resources/2026-2027-fall/) |
+
+Grading: Midterm 25% · Assignments 10% · Project 25% · Final 40%
+
+Nothing is filed by term yet; this course has no archived material from previous
+cohorts.

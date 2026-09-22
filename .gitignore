@@ -20,4 +20,4 @@ venv/
 *.synctex.gz
 
 # Large experiment output (keep summary figures/tables, not raw dumps)
-project/results/raw/
+assignments/*/project/results/raw/

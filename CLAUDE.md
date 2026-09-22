@@ -1,9 +1,9 @@
 # CSE 413 — Working Notes for AI Sessions
 
 Course repository for Optimization Theory and Applications (Akdeniz University,
-Computer Engineering, semester 7). Read [`docs/syllabus.md`](docs/syllabus.md) for
-what the course covers and [`docs/resource-map.md`](docs/resource-map.md) for which
-book covers which week.
+Computer Engineering, semester 7). Read [`course-info.md`](course-info.md) for
+what the course covers and its [Resource Map](course-info.md#resource-map--which-source-covers-which-week)
+section for which book covers which week. [`README.md`](README.md) has the layout.
 
 ## What this repo is for
 
@@ -16,13 +16,18 @@ assignments, and a term project — not a production system.
   Turkish appears only where the source is Turkish (syllabus quotes, glossary,
   Turkish reference books).
 - **Week notes:** one file per week, `weeks/NN-topic-slug.md`, holding goals,
-  reading, tasks, checklist and the `## My notes` section. Scratch code for that
-  week goes in `weeks/code/week-NN/`.
+  reading, tasks, checklist and, below the shared plan, one
+  `## Notes — <Name> (<term>)` section per person. Scratch code for that
+  week goes in `code/week-NN/`.
+- **Where other files go:** exam papers flat in `exams/`; someone's own assignments
+  and project in `assignments/<term>-<person>/`; slides and handouts the instructor
+  issued in a given term in `resources/<term>/`. A folder exists only once it holds
+  two or more files.
 - **Links:** plain Markdown links, never `[[wikilinks]]` — Markdown links show up in
   Obsidian's graph and backlinks *and* still work on GitHub. Book citations link to
   the exact page (`...pdf#page=N`); offsets are Boyd +14, Nocedal +19, Winston +16.
 - **Shared code:** anything reused by two or more weeks moves to `src/optlib/`.
-  One-off experiments stay in the week's `code/`.
+  One-off experiments stay in the week's `code/week-NN/`.
 - **Every implementation is verified** against a reference solver (SciPy, CVXPY,
   PuLP/CBC, NetworkX, PyTorch). An unverified implementation is not done.
 - **Stochastic methods take an explicit seed.** Comparisons use equal evaluation

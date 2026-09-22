@@ -2,7 +2,7 @@
 
 The syllabus requires every method to be implemented from scratch in Python.
 Anything reused across more than one week lives here as a proper module; one-off
-experiments stay in `weeks/NN-*/code/`.
+experiments stay in `code/week-NN/`.
 
 Planned modules, added as each week is covered:
 

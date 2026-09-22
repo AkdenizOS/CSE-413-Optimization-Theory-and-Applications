@@ -33,9 +33,10 @@ optimum) and a heuristic approach, then quantifies the gap between them.
 
 ## Structure
 
+Your project lives with your other work, in `assignments/<term>-<you>/project/`:
+
 ```
-project/
-├── README.md      this file
+assignments/<term>-<you>/project/
 ├── proposal.md    problem, data, method, evaluation plan
 ├── report/        final written report
 ├── src/           implementation

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSE 413 — Midterm Exam (EXAMPLE)</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 16mm 18mm 16mm;
+    @bottom-center { content: "CSE 413 Midterm (EXAMPLE) · Page " counter(page) " of " counter(pages); font: 9pt "Times New Roman", serif; color: #555; }
+  }
+  * { box-sizing: border-box; }
+  body { font: 11pt/1.4 "Times New Roman", Times, serif; color: #000; margin: 0; }
+  .watermark { position: fixed; top: 42%; left: -20%; right: -20%; white-space: nowrap; text-align: center; font: bold 54pt Arial, sans-serif; transform: rotate(-30deg); z-index: 1000; pointer-events: none; letter-spacing: 4px; }
+  .watermark .wb { color: rgba(0,99,170,0.09); }
+  .watermark .wo { color: rgba(244,117,36,0.12); }
+  header { border-bottom: 2px solid #000; padding-bottom: 6px; display: flex; align-items: center; gap: 14px; }
+  .seal { width: 58px; height: 58px; border: 2px solid #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font: bold 8pt Arial, sans-serif; text-align: center; line-height: 1.1; flex-shrink: 0; }
+  .inst { flex: 1; text-align: center; }
+  .inst .u { font-size: 14pt; font-weight: bold; letter-spacing: .5px; }
+  .inst .d { font-size: 10.5pt; }
+  .inst .c { font-size: 13pt; font-weight: bold; margin-top: 4px; }
+  .inst .e { font-size: 12pt; margin-top: 2px; }
+  .notice { margin: 8px 0; padding: 5px 8px; border: 1.5px dashed #b00; color: #b00; font: bold 9.5pt Arial, sans-serif; text-align: center; }
+  table { border-collapse: collapse; }
+  .info { width: 100%; margin-top: 8px; }
+  .info td { border: 1px solid #000; padding: 5px 8px; font-size: 10.5pt; height: 26px; }
+  .info td.l { width: 18%; font-weight: bold; background: #f2f2f2; }
+  .rules { margin: 10px 0; font-size: 10pt; }
+  .rules ol { margin: 4px 0 0 18px; padding: 0; }
+  .grid { margin: 8px auto 0; }
+  .grid td, .grid th { border: 1px solid #000; width: 58px; text-align: center; padding: 4px; font-size: 10.5pt; }
+  .grid th { background: #f2f2f2; }
+  .grid tr.g td { height: 32px; }
+  h2 { font-size: 12pt; margin: 14px 0 4px; border-bottom: 1px solid #000; padding-bottom: 2px; display: flex; justify-content: space-between; }
+  h2 .pts { font-weight: normal; font-style: italic; }
+  p { margin: 4px 0; }
+  .part { margin: 6px 0 2px; break-after: avoid; }
+  .part > b:first-child { display: inline-block; width: 26px; }
+  .part .pp { float: right; font-style: italic; }
+  .ans { break-inside: avoid; border: 1px solid #999; margin: 4px 0 8px 26px; background: repeating-linear-gradient(to bottom, transparent 0, transparent 23px, #e3e3e3 23px, #e3e3e3 24px); }
+  .math { font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif; white-space: nowrap; }
+  .lp { margin: 6px 0 6px 40px; font-family: "Cambria Math", "Times New Roman", serif; line-height: 1.5; }
+  .lp td { padding: 0 6px; }
+  .pb { break-before: page; }
+  .data { margin: 6px auto; }
+  .data td, .data th { border: 1px solid #000; padding: 3px 10px; text-align: center; font-size: 10.5pt; }
+  .data th { background: #f2f2f2; }
+  .end { text-align: center; margin-top: 18px; font-weight: bold; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+<div class="watermark"><span class="wb">AKDENIZ</span><span class="wo">OS.ORG</span></div>
+
+<header>
+  <div class="seal">AKDENİZ<br>ÜNİV.</div>
+  <div class="inst">
+    <div class="u">AKDENİZ UNIVERSITY</div>
+    <div class="d">Faculty of Engineering · Department of Computer Engineering</div>
+    <div class="c">CSE 413 — Optimization Theory and Applications</div>
+    <div class="e">Midterm Examination · 2026–2027 Fall Semester</div>
+  </div>
+  <div class="seal">CSE<br>413</div>
+</header>
+
+<div class="notice">EXAMPLE PAPER. Written for self-study. It was not issued by the instructor and is not a real past exam.</div>
+
+<table class="info">
+  <tr><td class="l">Name Surname</td><td></td><td class="l">Student No.</td><td style="width:26%"></td></tr>
+  <tr><td class="l">Date</td><td>____ / ____ / 20____</td><td class="l">Signature</td><td></td></tr>
+  <tr><td class="l">Duration</td><td>90 minutes</td><td class="l">Total</td><td>100 points</td></tr>
+</table>
+
+<div class="rules">
+  <b>Instructions</b>
+  <ol>
+    <li>Closed book, closed notes. A non-programmable calculator is allowed.</li>
+    <li>Show all work. A correct answer without justification receives no credit.</li>
+    <li>Answer in the space provided. If you need more space, use the back of the page and say so.</li>
+    <li>Write fractions exactly where possible (e.g. <span class="math">1/6</span>, not 0.1667).</li>
+    <li>Mobile phones must be switched off and put away.</li>
+  </ol>
+</div>
+
+<table class="grid">
+  <tr><th>Q</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>Total</th></tr>
+  <tr><th>Max</th><td>10</td><td>20</td><td>15</td><td>15</td><td>15</td><td>10</td><td>15</td><td>100</td></tr>
+  <tr class="g"><th>Score</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+
+<!-- Q1 -->
+<h2><span>Question 1 — Modeling</span><span class="pts">10 points</span></h2>
+<p>A small furniture workshop makes <b>desks</b> and <b>bookshelves</b>. Every product goes through a CNC machine and then through manual assembly. The weekly data are:</p>
+<table class="data">
+  <tr><th></th><th>Desk</th><th>Bookshelf</th><th>Weekly capacity</th></tr>
+  <tr><td>CNC time (h/unit)</td><td>2</td><td>1</td><td>100 h</td></tr>
+  <tr><td>Assembly time (h/unit)</td><td>1</td><td>1</td><td>80 h</td></tr>
+  <tr><td>Profit (×100 TL/unit)</td><td>40</td><td>30</td><td>—</td></tr>
+</table>
+<p>At most 40 desks can be sold per week. Bookshelves sell without limit. The workshop wants to maximize weekly profit.</p>
+<div class="part"><b>(a)</b> Define the decision variables and write the complete mathematical model (objective and all constraints).<span class="pp">6 pts</span></div>
+<div class="ans" style="height:120px"></div>
+<div class="part"><b>(b)</b> Classify the model: linear or nonlinear? Continuous or discrete? Is the feasible set convex? Justify each answer in one sentence.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:72px"></div>
+
+<!-- Q2 -->
+<h2 class="pb"><span>Question 2 — The Simplex Method</span><span class="pts">20 points</span></h2>
+<p>Use the model from Question 1:</p>
+<table class="lp">
+  <tr><td>maximize</td><td>z = 40x<sub>1</sub> + 30x<sub>2</sub></td></tr>
+  <tr><td>subject to</td><td>2x<sub>1</sub> + x<sub>2</sub> ≤ 100</td></tr>
+  <tr><td></td><td>x<sub>1</sub> + x<sub>2</sub> ≤ 80</td></tr>
+  <tr><td></td><td>x<sub>1</sub> ≤ 40</td></tr>
+  <tr><td></td><td>x<sub>1</sub>, x<sub>2</sub> ≥ 0</td></tr>
+</table>
+<div class="part"><b>(a)</b> Convert the problem to standard (equality) form using slack variables <span class="math">s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub></span>. Write the initial basic feasible solution.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:96px"></div>
+<div class="part"><b>(b)</b> Solve the problem with the tableau simplex method. Use the <i>most negative reduced cost</i> rule to choose the entering variable and the minimum-ratio test to choose the leaving variable. Show <u>every</u> tableau and mark the pivot element each time.<span class="pp">12 pts</span></div>
+<div class="ans" style="height:380px"></div>
+<div class="part"><b>(c)</b> State the optimal solution <span class="math">(x<sub>1</sub>*, x<sub>2</sub>*)</span> and the optimal profit. Which constraint is <i>not</i> binding at the optimum? Confirm your answer graphically by listing the vertices of the feasible region and their objective values.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:110px"></div>
+
+<!-- Q3 -->
+<h2 class="pb"><span>Question 3 — Duality and Sensitivity</span><span class="pts">15 points</span></h2>
+<p>Consider again the LP of Question 2.</p>
+<div class="part"><b>(a)</b> Write the dual LP. Use <span class="math">y<sub>1</sub>, y<sub>2</sub>, y<sub>3</sub></span> for the dual variables of the CNC, assembly and demand constraints.<span class="pp">5 pts</span></div>
+<div class="ans" style="height:130px"></div>
+<div class="part"><b>(b)</b> Using <b>complementary slackness</b> and your primal optimum from Q2(c), find the dual optimal solution <span class="math">y*</span>. Verify strong duality.<span class="pp">6 pts</span></div>
+<div class="ans" style="height:190px"></div>
+<div class="part"><b>(c)</b> A subcontractor offers extra CNC hours at 15 (×100 TL) per hour. A temporary worker offers extra assembly hours at 15 (×100 TL) per hour. Assume the optimal basis does not change. Which offer(s) should the workshop accept? Explain using your answer to (b).<span class="pp">4 pts</span></div>
+<div class="ans" style="height:120px"></div>
+
+<!-- Q4 -->
+<h2 class="pb"><span>Question 4 — Mathematical Foundations</span><span class="pts">15 points</span></h2>
+<div class="part"><b>(a)</b> For <span class="math">v = (1, −2, 2)</span>, compute <span class="math">‖v‖<sub>1</sub></span>, <span class="math">‖v‖<sub>2</sub></span> and <span class="math">‖v‖<sub>∞</sub></span>. Sketch the unit ball <span class="math">{x ∈ ℝ² : ‖x‖<sub>1</sub> ≤ 1}</span>.<span class="pp">3 pts</span></div>
+<div class="ans" style="height:110px"></div>
+<p style="margin-top:8px">For parts (b)–(d), let</p>
+<p style="text-align:center" class="math">f(x, y) = x² − 2xy + 2y² + e<sup>x</sup></p>
+<div class="part"><b>(b)</b> Compute the gradient <span class="math">∇f(x, y)</span> and the Hessian <span class="math">∇²f(x, y)</span>. Evaluate both at <span class="math">(0, 0)</span>.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:120px"></div>
+<div class="part"><b>(c)</b> Prove that <span class="math">f</span> is strictly convex on all of <span class="math">ℝ²</span>. State which convexity condition you are using.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:110px"></div>
+<div class="part"><b>(d)</b> Write the second-order Taylor approximation <span class="math">m(p) ≈ f((0,0) + p)</span> for <span class="math">p = (p<sub>1</sub>, p<sub>2</sub>)</span>.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:100px"></div>
+
+<!-- Q5 -->
+<h2 class="pb"><span>Question 5 — Gradient Descent</span><span class="pts">15 points</span></h2>
+<p>Minimize <span class="math">f(x) = x<sub>1</sub>² + 5x<sub>2</sub>²</span> starting from <span class="math">x<sup>(0)</sup> = (5, 1)</span>.</p>
+<div class="part"><b>(a)</b> Write <span class="math">f</span> in the form <span class="math">½xᵀQx</span>. Give <span class="math">Q</span>, its eigenvalues and the condition number <span class="math">κ(Q)</span>.<span class="pp">2 pts</span></div>
+<div class="ans" style="height:80px"></div>
+<div class="part"><b>(b)</b> Take one gradient descent step with constant step size <span class="math">α = 0.1</span>. Give <span class="math">x<sup>(1)</sup></span> and <span class="math">f(x<sup>(1)</sup>)</span>.<span class="pp">3 pts</span></div>
+<div class="ans" style="height:80px"></div>
+<div class="part"><b>(c)</b> For which constant step sizes <span class="math">α</span> does gradient descent converge on this function? Explain what happens to each coordinate when <span class="math">α = 0.25</span> is used for every iteration.<span class="pp">3 pts</span></div>
+<div class="ans" style="height:110px"></div>
+<div class="part"><b>(d)</b> Starting again from <span class="math">x<sup>(0)</sup></span>, run <b>backtracking line search</b> along <span class="math">d = −∇f(x<sup>(0)</sup>)</span> with <span class="math">α<sub>0</sub> = 1</span>, <span class="math">β = 0.5</span> and Armijo constant <span class="math">c = 0.1</span>. Write the Armijo condition, test every trial step and report the accepted <span class="math">α</span>.<span class="pp">5 pts</span></div>
+<div class="ans" style="height:170px"></div>
+<div class="part"><b>(e)</b> With the step <span class="math">α = 2/(λ<sub>min</sub> + λ<sub>max</sub>)</span>, by what factor does <span class="math">‖x<sup>(k)</sup> − x*‖</span> shrink per iteration (worst case)? Express the factor in terms of <span class="math">κ</span>.<span class="pp">2 pts</span></div>
+<div class="ans" style="height:70px"></div>
+
+<!-- Q6 -->
+<h2 class="pb"><span>Question 6 — Newton and Quasi-Newton Methods</span><span class="pts">10 points</span></h2>
+<div class="part"><b>(a)</b> For the function <span class="math">f</span> of Question 4, compute the Newton step <span class="math">Δx<sub>nt</sub></span> at <span class="math">(0, 0)</span> and the Newton decrement <span class="math">λ(0,0)</span>. How much decrease in <span class="math">f</span> does the quadratic model predict?<span class="pp">6 pts</span></div>
+<div class="ans" style="height:200px"></div>
+<div class="part"><b>(b)</b> Why do quasi-Newton methods such as BFGS avoid computing <span class="math">∇²f</span>? State the <b>secant condition</b> that the Hessian approximation <span class="math">B<sub>k+1</sub></span> must satisfy and define every symbol in it.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:130px"></div>
+
+<!-- Q7 -->
+<h2><span>Question 7 — Lagrange Multipliers and KKT</span><span class="pts">15 points</span></h2>
+<p>A sensor must be placed inside the allowed region <span class="math">x + 2y ≥ 5</span>, as close as possible to a base station at the origin:</p>
+<table class="lp">
+  <tr><td>minimize</td><td>x² + y²</td></tr>
+  <tr><td>subject to</td><td>x + 2y ≥ 5</td></tr>
+</table>
+<div class="part"><b>(a)</b> Write the Lagrangian and all four KKT conditions for this problem.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:110px"></div>
+<p class="pb"></p>
+<div class="part"><b>(b)</b> Solve the KKT system: find <span class="math">(x*, y*)</span>, the multiplier <span class="math">μ*</span> and <span class="math">f*</span>. Show that the case <span class="math">μ = 0</span> leads to no solution. Explain why the KKT point is guaranteed to be the global minimum.<span class="pp">7 pts</span></div>
+<div class="ans" style="height:240px"></div>
+<div class="part"><b>(c)</b> The right-hand side changes from 5 to 5.2. Using <span class="math">μ*</span> only (do not re-solve), estimate the new optimal value. Then compare your estimate with the exact value.<span class="pp">4 pts</span></div>
+<div class="ans" style="height:150px"></div>
+
+<div class="end">— END OF EXAM · GOOD LUCK —</div>
+</body>
+</html>

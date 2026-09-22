@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSE 413 — Midterm Exam (EXAMPLE) — Answer Key</title>
+<style>
+  @page {
+    size: A4;
+    margin: 16mm 16mm 18mm 16mm;
+    @bottom-center { content: "CSE 413 Midterm (EXAMPLE) — Answer Key · Page " counter(page) " of " counter(pages); font: 9pt "Times New Roman", serif; color: #555; }
+  }
+  * { box-sizing: border-box; }
+  body { font: 10.5pt/1.4 "Times New Roman", Times, serif; color: #000; margin: 0; }
+  .watermark { position: fixed; top: 42%; left: -20%; right: -20%; white-space: nowrap; text-align: center; font: bold 54pt Arial, sans-serif; transform: rotate(-30deg); z-index: 1000; pointer-events: none; letter-spacing: 4px; }
+  .watermark .wb { color: rgba(0,99,170,0.09); }
+  .watermark .wo { color: rgba(244,117,36,0.12); }
+  header { border-bottom: 2px solid #000; padding-bottom: 6px; text-align: center; }
+  header .u { font-size: 13pt; font-weight: bold; }
+  header .c { font-size: 12pt; font-weight: bold; margin-top: 2px; }
+  header .k { font: bold 11pt Arial, sans-serif; color: #b00; margin-top: 4px; letter-spacing: 1px; }
+  .notice { margin: 8px 0; padding: 5px 8px; border: 1.5px dashed #b00; color: #b00; font: bold 9.5pt Arial, sans-serif; text-align: center; }
+  h2 { font-size: 12pt; margin: 14px 0 4px; border-bottom: 1px solid #000; padding-bottom: 2px; display: flex; justify-content: space-between; break-after: avoid; }
+  h2 .pts { font-weight: normal; font-style: italic; }
+  p { margin: 3px 0; }
+  .part { margin: 8px 0 2px; }
+  .part > b:first-child { display: inline-block; width: 24px; }
+  .sol { margin: 2px 0 4px 24px; padding: 4px 8px; border-left: 3px solid #1a5; background: #f4fbf6; }
+  .sol .final { font-weight: bold; }
+  .math { font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif; white-space: nowrap; }
+  .lp { margin: 2px 0 2px 20px; font-family: "Cambria Math", "Times New Roman", serif; line-height: 1.45; border-collapse: collapse; }
+  .lp td { padding: 0 6px; }
+  table.tab { border-collapse: collapse; margin: 4px 0 6px; font-size: 10pt; break-inside: avoid; }
+  .tab th, .tab td { border: 1px solid #000; padding: 1px 8px; text-align: center; }
+  .tab th { background: #eee; }
+  .tab tr.z td { border-top: 2px solid #000; background: #f7f7f7; }
+  .tab td.pv { font-weight: bold; outline: 2px solid #b00; outline-offset: -3px; }
+  .tab td.rhs { border-left: 2px solid #000; }
+  .cap { font-size: 9.5pt; font-style: italic; margin-top: 6px; }
+  .note { font-size: 9.5pt; color: #333; font-style: italic; }
+  .pb { break-before: page; }
+</style>
+</head>
+<body>
+<div class="watermark"><span class="wb">AKDENIZ</span><span class="wo">OS.ORG</span></div>
+
+<header>
+  <div class="u">AKDENİZ UNIVERSITY · Department of Computer Engineering</div>
+  <div class="c">CSE 413 — Optimization Theory and Applications · Midterm Examination</div>
+  <div class="k">ANSWER KEY</div>
+</header>
+<div class="notice">EXAMPLE PAPER. Written for self-study. It was not issued by the instructor and is not a real past exam.</div>
+
+<!-- Q1 -->
+<h2><span>Question 1 — Modeling</span><span class="pts">10 points</span></h2>
+<div class="part"><b>(a)</b> Model <span class="note">(6 pts: variables 1, objective 2, constraints 3)</span>
+  <div class="sol">
+    <p><span class="math">x<sub>1</sub></span> = desks produced per week, <span class="math">x<sub>2</sub></span> = bookshelves produced per week.</p>
+    <table class="lp">
+      <tr><td>max</td><td>z = 40x<sub>1</sub> + 30x<sub>2</sub></td><td class="note">(profit, ×100 TL)</td></tr>
+      <tr><td>s.t.</td><td>2x<sub>1</sub> + x<sub>2</sub> ≤ 100</td><td class="note">(CNC hours)</td></tr>
+      <tr><td></td><td>x<sub>1</sub> + x<sub>2</sub> ≤ 80</td><td class="note">(assembly hours)</td></tr>
+      <tr><td></td><td>x<sub>1</sub> ≤ 40</td><td class="note">(desk demand)</td></tr>
+      <tr><td></td><td>x<sub>1</sub>, x<sub>2</sub> ≥ 0</td><td></td></tr>
+    </table>
+  </div>
+</div>
+<div class="part"><b>(b)</b> Classification <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p><b>Linear:</b> the objective and every constraint are linear in <span class="math">x</span>, so this is an LP.</p>
+    <p><b>Continuous</b> if fractional production is allowed (e.g. weekly averages). If whole units are required it becomes an integer LP. Here the LP optimum happens to be integral anyway.</p>
+    <p><b>Convex feasible set:</b> each constraint defines a half-space, and an intersection of half-spaces (a polyhedron) is convex.</p>
+  </div>
+</div>
+
+<!-- Q2 -->
+<h2><span>Question 2 — The Simplex Method</span><span class="pts">20 points</span></h2>
+<div class="part"><b>(a)</b> Standard form <span class="note">(4 pts)</span>
+  <div class="sol">
+    <table class="lp">
+      <tr><td>max</td><td>z = 40x<sub>1</sub> + 30x<sub>2</sub></td></tr>
+      <tr><td>s.t.</td><td>2x<sub>1</sub> + x<sub>2</sub> + s<sub>1</sub> = 100</td></tr>
+      <tr><td></td><td>x<sub>1</sub> + x<sub>2</sub> + s<sub>2</sub> = 80</td></tr>
+      <tr><td></td><td>x<sub>1</sub> + s<sub>3</sub> = 40</td></tr>
+      <tr><td></td><td>x<sub>1</sub>, x<sub>2</sub>, s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub> ≥ 0</td></tr>
+    </table>
+    <p>Initial BFS (origin): <span class="math">x<sub>1</sub> = x<sub>2</sub> = 0</span>, <span class="math">s = (100, 80, 40)</span>, <span class="math">z = 0</span>.</p>
+  </div>
+</div>
+<div class="part"><b>(b)</b> Tableau simplex <span class="note">(12 pts: 4 per correct pivot, including the ratio test)</span>
+  <div class="sol">
+    <p class="cap">Tableau 0. Entering x<sub>1</sub> (most negative −40). Ratios 100/2 = 50, 80/1 = 80, 40/1 = 40, so s<sub>3</sub> leaves.</p>
+    <table class="tab">
+      <tr><th>Basis</th><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th>s<sub>1</sub></th><th>s<sub>2</sub></th><th>s<sub>3</sub></th><th>RHS</th><th>Ratio</th></tr>
+      <tr><td>s<sub>1</sub></td><td>2</td><td>1</td><td>1</td><td>0</td><td>0</td><td class="rhs">100</td><td>50</td></tr>
+      <tr><td>s<sub>2</sub></td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td class="rhs">80</td><td>80</td></tr>
+      <tr><td>s<sub>3</sub></td><td class="pv">1</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="rhs">40</td><td><b>40 ←</b></td></tr>
+      <tr class="z"><td>z</td><td>−40</td><td>−30</td><td>0</td><td>0</td><td>0</td><td class="rhs">0</td><td></td></tr>
+    </table>
+    <p class="cap">Tableau 1. Entering x<sub>2</sub> (−30). Ratios 20/1 = 20, 40/1 = 40, and the x<sub>1</sub> row has no ratio (coefficient 0), so s<sub>1</sub> leaves.</p>
+    <table class="tab">
+      <tr><th>Basis</th><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th>s<sub>1</sub></th><th>s<sub>2</sub></th><th>s<sub>3</sub></th><th>RHS</th><th>Ratio</th></tr>
+      <tr><td>s<sub>1</sub></td><td>0</td><td class="pv">1</td><td>1</td><td>0</td><td>−2</td><td class="rhs">20</td><td><b>20 ←</b></td></tr>
+      <tr><td>s<sub>2</sub></td><td>0</td><td>1</td><td>0</td><td>1</td><td>−1</td><td class="rhs">40</td><td>40</td></tr>
+      <tr><td>x<sub>1</sub></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="rhs">40</td><td>—</td></tr>
+      <tr class="z"><td>z</td><td>0</td><td>−30</td><td>0</td><td>0</td><td>40</td><td class="rhs">1600</td><td></td></tr>
+    </table>
+    <p class="cap">Tableau 2. Entering s<sub>3</sub> (−20). Ratios: x<sub>2</sub> row skipped (coefficient −2 &lt; 0), 20/1 = 20, 40/1 = 40, so s<sub>2</sub> leaves.</p>
+    <table class="tab">
+      <tr><th>Basis</th><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th>s<sub>1</sub></th><th>s<sub>2</sub></th><th>s<sub>3</sub></th><th>RHS</th><th>Ratio</th></tr>
+      <tr><td>x<sub>2</sub></td><td>0</td><td>1</td><td>1</td><td>0</td><td>−2</td><td class="rhs">20</td><td>—</td></tr>
+      <tr><td>s<sub>2</sub></td><td>0</td><td>0</td><td>−1</td><td>1</td><td class="pv">1</td><td class="rhs">20</td><td><b>20 ←</b></td></tr>
+      <tr><td>x<sub>1</sub></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="rhs">40</td><td>40</td></tr>
+      <tr class="z"><td>z</td><td>0</td><td>0</td><td>30</td><td>0</td><td>−20</td><td class="rhs">2200</td><td></td></tr>
+    </table>
+    <p class="cap">Tableau 3. Every reduced cost is ≥ 0, so this tableau is optimal.</p>
+    <table class="tab">
+      <tr><th>Basis</th><th>x<sub>1</sub></th><th>x<sub>2</sub></th><th>s<sub>1</sub></th><th>s<sub>2</sub></th><th>s<sub>3</sub></th><th>RHS</th></tr>
+      <tr><td>x<sub>2</sub></td><td>0</td><td>1</td><td>−1</td><td>2</td><td>0</td><td class="rhs">60</td></tr>
+      <tr><td>s<sub>3</sub></td><td>0</td><td>0</td><td>−1</td><td>1</td><td>1</td><td class="rhs">20</td></tr>
+      <tr><td>x<sub>1</sub></td><td>1</td><td>0</td><td>1</td><td>−1</td><td>0</td><td class="rhs">20</td></tr>
+      <tr class="z"><td>z</td><td>0</td><td>0</td><td>10</td><td>20</td><td>0</td><td class="rhs">2600</td></tr>
+    </table>
+  </div>
+</div>
+<div class="part"><b>(c)</b> Reading the solution <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p class="final">x* = (20, 60), z* = 2600 (i.e. 260,000 TL per week).</p>
+    <p>The demand constraint <span class="math">x<sub>1</sub> ≤ 40</span> is <b>not binding</b>: <span class="math">s<sub>3</sub> = 20</span>. The CNC and assembly constraints are both tight.</p>
+    <p>Vertex check: (0,0) → 0 · (40,0) → 1600 · (40,20) → 2200 · <b>(20,60) → 2600</b> · (0,80) → 2400. The simplex path went (0,0) → (40,0) → (40,20) → (20,60).</p>
+  </div>
+</div>
+
+<!-- Q3 -->
+<h2><span>Question 3 — Duality and Sensitivity</span><span class="pts">15 points</span></h2>
+<div class="part"><b>(a)</b> Dual <span class="note">(5 pts)</span>
+  <div class="sol">
+    <table class="lp">
+      <tr><td>min</td><td>w = 100y<sub>1</sub> + 80y<sub>2</sub> + 40y<sub>3</sub></td></tr>
+      <tr><td>s.t.</td><td>2y<sub>1</sub> + y<sub>2</sub> + y<sub>3</sub> ≥ 40</td><td class="note">(x<sub>1</sub> column)</td></tr>
+      <tr><td></td><td>y<sub>1</sub> + y<sub>2</sub> ≥ 30</td><td class="note">(x<sub>2</sub> column)</td></tr>
+      <tr><td></td><td>y<sub>1</sub>, y<sub>2</sub>, y<sub>3</sub> ≥ 0</td></tr>
+    </table>
+  </div>
+</div>
+<div class="part"><b>(b)</b> Complementary slackness <span class="note">(6 pts)</span>
+  <div class="sol">
+    <p>The demand constraint is slack at the optimum (<span class="math">s<sub>3</sub> = 20 &gt; 0</span>), so <span class="math">y<sub>3</sub> = 0</span>.</p>
+    <p>Both <span class="math">x<sub>1</sub> = 20 &gt; 0</span> and <span class="math">x<sub>2</sub> = 60 &gt; 0</span>, so both dual constraints must be tight:</p>
+    <p class="math" style="margin-left:20px">2y<sub>1</sub> + y<sub>2</sub> = 40,  y<sub>1</sub> + y<sub>2</sub> = 30  ⇒  y<sub>1</sub> = 10, y<sub>2</sub> = 20</p>
+    <p class="final">y* = (10, 20, 0). Strong duality: w* = 100·10 + 80·20 + 40·0 = 2600 = z* ✓</p>
+    <p class="note">Shortcut: the same numbers appear under s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub> in the z-row of the final tableau.</p>
+  </div>
+</div>
+<div class="part"><b>(c)</b> Shadow prices <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p><b>CNC offer: reject.</b> One extra CNC hour is worth <span class="math">y<sub>1</sub>* = 10</span>, which is less than its price of 15, so each hour would lose 5.</p>
+    <p><b>Assembly offer: accept.</b> One extra assembly hour is worth <span class="math">y<sub>2</sub>* = 20</span>, which is more than its price of 15, so each hour gains 5. This holds only while the current basis stays optimal.</p>
+  </div>
+</div>
+
+<!-- Q4 -->
+<h2><span>Question 4 — Mathematical Foundations</span><span class="pts">15 points</span></h2>
+<div class="part"><b>(a)</b> Norms <span class="note">(3 pts)</span>
+  <div class="sol">
+    <p><span class="math">‖v‖<sub>1</sub> = 1 + 2 + 2 = <b>5</b></span>, <span class="math">‖v‖<sub>2</sub> = √(1 + 4 + 4) = <b>3</b></span>, <span class="math">‖v‖<sub>∞</sub> = <b>2</b></span>.</p>
+    <p>The <span class="math">ℓ<sub>1</sub></span> unit ball is a diamond (a square rotated 45°) with vertices <span class="math">(±1, 0), (0, ±1)</span>.</p>
+  </div>
+</div>
+<div class="part"><b>(b)</b> Gradient and Hessian <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p><span class="math">∇f(x, y) = (2x − 2y + e<sup>x</sup>, −2x + 4y)</span>,  <span class="math">∇²f(x, y) = [[2 + e<sup>x</sup>, −2], [−2, 4]]</span></p>
+    <p class="final">At (0,0): ∇f = (1, 0),  ∇²f = [[3, −2], [−2, 4]],  f(0,0) = 1.</p>
+  </div>
+</div>
+<div class="part"><b>(c)</b> Strict convexity <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p><b>Second-order condition:</b> <span class="math">f</span> is strictly convex if <span class="math">∇²f(x) ≻ 0</span> for every <span class="math">x</span>. Check the leading principal minors (Sylvester):</p>
+    <p class="math" style="margin-left:20px">D<sub>1</sub> = 2 + e<sup>x</sup> &gt; 0,  D<sub>2</sub> = 4(2 + e<sup>x</sup>) − 4 = 4 + 4e<sup>x</sup> &gt; 0  for all x.</p>
+    <p>So <span class="math">∇²f ≻ 0</span> on all of <span class="math">ℝ²</span>, and <span class="math">f</span> is strictly convex.</p>
+    <p class="note">Alternative proof: x² − 2xy + 2y² = (x − y)² + y², a sum of convex functions, and eˣ is strictly convex.</p>
+  </div>
+</div>
+<div class="part"><b>(d)</b> Taylor model <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p><span class="math">m(p) = f(0) + ∇f(0)ᵀp + ½ pᵀ∇²f(0) p</span></p>
+    <p class="final">m(p) = 1 + p<sub>1</sub> + ½(3p<sub>1</sub>² − 4p<sub>1</sub>p<sub>2</sub> + 4p<sub>2</sub>²) = 1 + p<sub>1</sub> + 1.5p<sub>1</sub>² − 2p<sub>1</sub>p<sub>2</sub> + 2p<sub>2</sub>²</p>
+  </div>
+</div>
+
+<!-- Q5 -->
+<h2><span>Question 5 — Gradient Descent</span><span class="pts">15 points</span></h2>
+<div class="part"><b>(a)</b> <span class="note">(2 pts)</span>
+  <div class="sol"><p><span class="math">Q = diag(2, 10)</span>, eigenvalues <span class="math">λ = 2, 10</span>, <b><span class="math">κ = 10/2 = 5</span></b>.</p></div>
+</div>
+<div class="part"><b>(b)</b> <span class="note">(3 pts)</span>
+  <div class="sol">
+    <p><span class="math">∇f(x) = (2x<sub>1</sub>, 10x<sub>2</sub>)</span>, so <span class="math">∇f(5, 1) = (10, 10)</span> and <span class="math">f(x<sup>(0)</sup>) = 25 + 5 = 30</span>.</p>
+    <p class="final">x<sup>(1)</sup> = (5, 1) − 0.1·(10, 10) = (4, 0),  f(x<sup>(1)</sup>) = 16.</p>
+  </div>
+</div>
+<div class="part"><b>(c)</b> <span class="note">(3 pts)</span>
+  <div class="sol">
+    <p>Each coordinate updates independently: <span class="math">x<sub>i</sub> ← (1 − αλ<sub>i</sub>) x<sub>i</sub></span>. The method converges iff <span class="math">|1 − αλ<sub>i</sub>| &lt; 1</span> for every <span class="math">i</span>, which gives <b><span class="math">0 &lt; α &lt; 2/λ<sub>max</sub> = 0.2</span></b>.</p>
+    <p>With <span class="math">α = 0.25</span>: the <span class="math">x<sub>1</sub></span> factor is <span class="math">1 − 0.5 = 0.5</span>, so that coordinate shrinks. The <span class="math">x<sub>2</sub></span> factor is <span class="math">1 − 2.5 = −1.5</span>, so <span class="math">x<sub>2</sub></span> flips sign and grows by 1.5× every iteration. The iteration <b>diverges</b>.</p>
+  </div>
+</div>
+<div class="part"><b>(d)</b> Backtracking <span class="note">(5 pts)</span>
+  <div class="sol">
+    <p>Armijo condition: <span class="math">f(x + αd) ≤ f(x) + cα∇f(x)ᵀd</span>. Here <span class="math">∇fᵀd = −‖∇f‖² = −200</span>, so the test is <span class="math">f(x + αd) ≤ 30 − 20α</span>.</p>
+    <table class="tab">
+      <tr><th>α</th><th>x + αd</th><th>f(x + αd)</th><th>30 − 20α</th><th>Result</th></tr>
+      <tr><td>1</td><td>(−5, −9)</td><td>430</td><td>10</td><td>reject</td></tr>
+      <tr><td>0.5</td><td>(0, −4)</td><td>80</td><td>20</td><td>reject</td></tr>
+      <tr><td>0.25</td><td>(2.5, −1.5)</td><td>17.5</td><td>25</td><td><b>accept</b></td></tr>
+    </table>
+    <p class="final">Accepted α = 0.25, new point (2.5, −1.5), f = 17.5.</p>
+    <p class="note">Note: 0.25 &gt; 2/λ<sub>max</sub>. Armijo only needs sufficient decrease in this one step, so it can accept a step that would diverge if used as a constant step size.</p>
+  </div>
+</div>
+<div class="part"><b>(e)</b> <span class="note">(2 pts)</span>
+  <div class="sol">
+    <p><span class="math">α = 2/12 = 1/6</span>. The factors are <span class="math">1 − 2/6 = 2/3</span> and <span class="math">1 − 10/6 = −2/3</span>.</p>
+    <p class="final">Worst case ‖x<sup>(k+1)</sup> − x*‖ ≤ (2/3)‖x<sup>(k)</sup> − x*‖, and 2/3 = (κ − 1)/(κ + 1) with κ = 5.</p>
+  </div>
+</div>
+
+<!-- Q6 -->
+<h2><span>Question 6 — Newton and Quasi-Newton Methods</span><span class="pts">10 points</span></h2>
+<div class="part"><b>(a)</b> Newton step <span class="note">(6 pts)</span>
+  <div class="sol">
+    <p>Solve <span class="math">∇²f Δx = −∇f</span> with <span class="math">∇²f = [[3, −2], [−2, 4]]</span> and <span class="math">∇f = (1, 0)</span>.</p>
+    <p><span class="math">det = 12 − 4 = 8</span>, <span class="math">(∇²f)<sup>−1</sup> = (1/8)[[4, 2], [2, 3]]</span>.</p>
+    <p class="final">Δx<sub>nt</sub> = −(1/8)(4, 2) = (−1/2, −1/4).</p>
+    <p>Check: <span class="math">3(−½) − 2(−¼) = −1</span> ✓, <span class="math">−2(−½) + 4(−¼) = 0</span> ✓.</p>
+    <p>Newton decrement: <span class="math">λ² = ∇fᵀ(∇²f)<sup>−1</sup>∇f = 4/8 = 1/2</span>, so <b><span class="math">λ = 1/√2 ≈ 0.707</span></b>.</p>
+    <p>Predicted decrease: <span class="math">m(0) − m(Δx<sub>nt</sub>) = λ²/2 = <b>1/4</b></span>. The actual value is <span class="math">f(−½, −¼) = 0.7315</span>, a decrease of 0.2685, which is close to the prediction.</p>
+  </div>
+</div>
+<div class="part"><b>(b)</b> Quasi-Newton <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p>Forming the Hessian takes <span class="math">O(n²)</span> second derivatives, which are often unavailable or expensive. Solving the Newton system then costs <span class="math">O(n³)</span>. BFGS builds a Hessian approximation from gradient differences only and costs <span class="math">O(n²)</span> per iteration.</p>
+    <p class="final">Secant condition: B<sub>k+1</sub> s<sub>k</sub> = y<sub>k</sub>, where s<sub>k</sub> = x<sub>k+1</sub> − x<sub>k</sub> and y<sub>k</sub> = ∇f(x<sub>k+1</sub>) − ∇f(x<sub>k</sub>).</p>
+    <p class="note">The curvature condition s<sub>k</sub>ᵀy<sub>k</sub> &gt; 0 (guaranteed by a Wolfe line search) keeps B<sub>k+1</sub> positive definite.</p>
+  </div>
+</div>
+
+<!-- Q7 -->
+<h2><span>Question 7 — Lagrange Multipliers and KKT</span><span class="pts">15 points</span></h2>
+<div class="part"><b>(a)</b> KKT <span class="note">(4 pts, 1 per condition)</span>
+  <div class="sol">
+    <p>Write the constraint as <span class="math">g(x, y) = 5 − x − 2y ≤ 0</span>. Lagrangian: <span class="math">L = x² + y² + μ(5 − x − 2y)</span>.</p>
+    <p>1. <b>Stationarity:</b> <span class="math">2x − μ = 0</span>, <span class="math">2y − 2μ = 0</span></p>
+    <p>2. <b>Primal feasibility:</b> <span class="math">x + 2y ≥ 5</span></p>
+    <p>3. <b>Dual feasibility:</b> <span class="math">μ ≥ 0</span></p>
+    <p>4. <b>Complementary slackness:</b> <span class="math">μ(5 − x − 2y) = 0</span></p>
+  </div>
+</div>
+<div class="part"><b>(b)</b> Solve <span class="note">(7 pts)</span>
+  <div class="sol">
+    <p><b>Case μ = 0:</b> stationarity gives <span class="math">x = y = 0</span>, but then <span class="math">0 ≥ 5</span> is false. Infeasible, so no solution in this case.</p>
+    <p><b>Case μ &gt; 0:</b> the constraint is active, <span class="math">x + 2y = 5</span>. Stationarity gives <span class="math">x = μ/2</span> and <span class="math">y = μ</span>, so <span class="math">μ/2 + 2μ = 5</span> and <span class="math">μ = 2</span>.</p>
+    <p class="final">(x*, y*) = (1, 2), μ* = 2 ≥ 0 ✓, f* = 5.</p>
+    <p><b>Global:</b> the objective is convex (<span class="math">∇²f = 2I ≻ 0</span>) and the constraint is affine, so the problem is convex and the KKT conditions are sufficient. Slater's condition also holds, e.g. (5, 5) is strictly feasible. Geometrically, (1, 2) is the projection of the origin onto the line <span class="math">x + 2y = 5</span>, along its normal (1, 2).</p>
+  </div>
+</div>
+<div class="part"><b>(c)</b> Sensitivity <span class="note">(4 pts)</span>
+  <div class="sol">
+    <p>The multiplier is the rate of change of the optimal value with the right-hand side: <span class="math">∂f*/∂b = μ* = 2</span>.</p>
+    <p class="final">Estimate: f*(5.2) ≈ 5 + 2·0.2 = 5.4.</p>
+    <p>Exact: the optimum is <span class="math">(b/5)(1, 2)</span>, so <span class="math">f*(b) = b²/5</span> and <span class="math">f*(5.2) = 27.04/5 = 5.408</span>. The error of 0.008 comes from the curvature of <span class="math">f*(b)</span>, which the first-order estimate ignores.</p>
+  </div>
+</div>
+</body>
+</html>
