@@ -29,7 +29,7 @@ you produced yourself goes elsewhere: assignments and the project under
 `assignments/<term>-<you>/`, notes in your own section of each week file.
 
 Once a few years have accumulated, the useful thing is to read them all and write
-down the pattern. See [CSE 435's exam analysis](https://github.com/AkdenizOS/CSE-435-Formal-Languages-and-Automata-/blob/main/docs/exam-patterns.md)
+down the pattern. See [CSE 435's exam analysis](https://github.com/AkdenizOS/CSE-435-Formal-Languages-and-Automata-/blob/main/exams/README.md)
 for what that looks like — its midterm shape has not changed since 2020.
 
 ## Midterm (25%)
