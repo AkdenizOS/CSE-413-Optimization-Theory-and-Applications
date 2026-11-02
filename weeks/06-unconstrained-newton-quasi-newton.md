@@ -20,6 +20,7 @@
 
 ## Reading
 
+- [Fall 2026–2027 instructor deck](../resources/2026-2027-fall/27G_CSE413_5013_OptimizationTheory_Week06.pdf#page=5) — Start with scalar slope/bend, square-root updates and negative curvature. BFGS/L-BFGS are explained conceptually; decrement, matrix updates and Gauss–Newton below are extensions beyond this deck.
 - [Nocedal & Wright — Ch. 6 (quasi-Newton methods)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=154)
 - [Nocedal & Wright — Ch. 7 (large-scale unconstrained optimization, L-BFGS)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=183)
 - [Nocedal & Wright — Ch. 10 (least-squares problems)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=264)

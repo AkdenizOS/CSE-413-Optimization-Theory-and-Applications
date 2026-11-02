@@ -18,6 +18,7 @@
 
 ## Reading
 
+- [Fall 2026–2027 instructor deck](../resources/2026-2027-fall/27G_CSE413_5013_OptimizationTheory_Week05.pdf#page=4) — Start with scalar/2-D steps, simple decrease-only backtracking, rescaling and stopping. Formal Armijo/Wolfe below are broader syllabus/textbook study.
 - [Nocedal & Wright — Ch. 3 (line search methods)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=49)
 - [Boyd — Ch. 9.1-9.2 (unconstrained problems, descent methods)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=471) · [9.3 (gradient descent)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=480)
 - Boyd slides — Section 9 "Unconstrained minimization"

@@ -45,7 +45,37 @@ quality when a proof is impossible. Every method is implemented from scratch in 
 
 Tracked in [course-info.md](course-info.md#grading-tracker). Assignment and project
 briefs: [assignments/README.md](assignments/README.md), [assignments/project.md](assignments/project.md).
+
+The table is the official syllabus. In **Fall 2026-2027** the instructor's
+[syllabus](resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Syllabus.pdf) sets different weights and has no separate assignments:
+
+| Component | Weight | Scope |
+|-----------|--------|-------|
+| Midterm | 30% | Week 8; topics of weeks 1–7; one handwritten A4 formula sheet allowed |
+| Project | 30% | Presented in week 15: 15 minutes plus a live demo |
+| Final exam | 40% | Final exam week; weeks 1–14; one handwritten A4 formula sheet allowed |
+
+AI tools are welcome for learning; any use in the project must be declared in the
+report, and all AI tools are prohibited in exams.
 Exam preparation: [exams/README.md](exams/README.md).
+
+## Instructor material — Fall 2026–2027
+
+The instructor decks cover weeks 1–6. Use the syllabus and Lab01/02 alongside
+them; the study guide starts from the basic concepts.
+
+| Week | Instructor deck | Main preparation target |
+|------|-----------------|-------------------------|
+| 1 | [Modeling](resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Week_01.pdf#page=4) | Formulation, classification |
+| 2 | [Mathematical foundations](resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Week_02.pdf#page=4) | Norms, derivatives, Taylor, convexity, numerical pitfalls |
+| 3 | [LP and simplex](resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Week_03.pdf#page=4) | Job-mix, tableau pivots, special cases |
+| 4 | [Duality and sensitivity](resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Week_04.pdf#page=3) | Prices, dual, ranges, data-center case |
+| 5 | [Gradient descent](resources/2026-2027-fall/27G_CSE413_5013_OptimizationTheory_Week05.pdf#page=4) | Simple updates, backtracking, rescaling, stopping |
+| 6 | [Newton](resources/2026-2027-fall/27G_CSE413_5013_OptimizationTheory_Week06.pdf#page=5) | Scalar Newton, square roots, curvature risk, BFGS/L-BFGS idea |
+
+Lab01 and Lab02 are in the same resource folder. W7 slides and Lab03–06
+notebooks are not available in the resource folder. Availability of a deck does not prove all its
+content was taught. Start midterm review with [exams/midterm-review.md](exams/midterm-review.md).
 
 ## Layout
 
@@ -114,9 +144,9 @@ shared plan — which is the point.
 
 | Term | Instructor | Schedule | Midterm | Final | Notes |
 |------|-----------|----------|---------|-------|-------|
-| Fall 2026-2027 | Arş. Gör. Dr. Taha Yiğit Alkan | TBD | TBD | TBD | Efe — in every week file; slides and syllabus in [resources/2026-2027-fall/](resources/2026-2027-fall/) |
+| Fall 2026-2027 | Arş. Gör. Dr. Taha Yiğit Alkan | TBD | Week 8 | TBD | Efe — in every week file; syllabus, slides and lab notebooks in [resources/2026-2027-fall/](resources/2026-2027-fall/) |
 
-Grading: Midterm 25% · Assignments 10% · Project 25% · Final 40%
+Grading in Fall 2026-2027: Midterm 30% · Project 30% · Final 40%
 
 Nothing is filed by term yet; this course has no archived material from previous
 cohorts.

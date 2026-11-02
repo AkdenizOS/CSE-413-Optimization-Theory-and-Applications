@@ -19,6 +19,7 @@
 
 ## Reading
 
+- [Fall 2026–2027 instructor deck](../resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Week_04.pdf#page=3) — Job-mix dual/prices, ranges, simplex vs interior-point, data-center case. Detailed dual-simplex pivots and Farkas are extension topics.
 - [Winston — Ch. 5 (sensitivity analysis: an applied approach)](../resources/books/winston-operations-research.pdf#page=243)
 - [Winston — Ch. 6 (sensitivity analysis and duality)](../resources/books/winston-operations-research.pdf#page=278)
 - [Boyd — Ch. 5.1 (the Lagrange dual function)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=229) · [5.2 (the dual problem)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=237)

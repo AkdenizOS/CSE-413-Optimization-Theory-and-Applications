@@ -20,6 +20,7 @@
 
 ## Reading
 
+- [Fall 2026–2027 instructor deck](../resources/2026-2027-fall/27G_CSE413_5013_Optimization_Theory_Week_02.pdf#page=4) — Norms, derivatives, Taylor, convexity and numerical reality.
 - [Nocedal & Wright — Ch. 2 (fundamentals of unconstrained optimization)](../resources/books/nocedal-wright-numerical-optimization.pdf#page=29)
 - [Boyd — App. A.1 (norms), A.4 (derivatives), A.5 (linear algebra)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=647)
 - [Boyd — Ch. 2.1 (affine and convex sets)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=35) · [Ch. 3.1 (basic properties)](../resources/books/boyd-vandenberghe-convex-optimization.pdf#page=81)
